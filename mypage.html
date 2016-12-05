@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8" />
+<title> GyoWorld </title>
+<style>
+	#header, #content, #footer{
+		width:1400px;
+		margin: auto ;
+		overflow:hidden;
+	}
+	#header .left_space, #header .center_space, #header .right_space {
+		width:400px; height:200px; 
+		float:left;
+		background-color: #f3f3f3;
+		border: 1px solid #000000;
+	}
+	#content .left_space, #content .center_space, #content .right_space{
+		width:400px; height:350px;
+		float:left;
+		background-color:#f3f3f3;
+		border:1px solid #000000;
+	}
+	#footer .left_space, #footer .center_space, #footer .right_space{
+		width:400px; height:250px;
+		float:left;
+		background-color:#f3f3f3;
+		border:1px solid #000000;
+	}
+	#header .left_space{
+		border-radius: 30px 0;
+	}
+	#header .right_space{
+		border-radius: 0 30px;	
+	}
+	#content .left_space{
+		border-radius:0 30px 30px 0;
+		height:300px;
+	}
+	#content .right_space{
+		border-radius:30px 0 0 30px;
+		height:300px;
+	}
+	#header .center_space{
+		border-radius:0 0 30px 30px;
+	}
+	#content .center_space{
+	    
+	    background-color: pink;
+		border-radius:30px;
+		height:300px;
+	}
+	#footer .center_space{
+	    background-color:white;
+		border-radius:30px 30px 0 0;
+	}
+	#footer .left_space{
+	    border-radius: 0 30px;
+	}
+	#footer .right_space{
+	    border-radius: 30px 0;
+	}
+	#header .center_space, #content .center_space, #footer .center_space{
+	    width:500px;
+	}
+	#header .center_space{
+	    text-align: center;
+	}
+	.homepage {
+	    color : pink;
+	    font-weight: bold;
+	    font-size:40px;
+	}
+	.code{
+	    text-align:center;
+	}
+    #content .center_space ul li{
+		list-style :none;
+		float:left;
+		padding: 0 7px;
+	}
+	ul li a{
+	    color:white;
+	    font-style: Arial;
+	    font-size: 25px;
+		font-weight:bold;
+	}
+	li a:hover{
+	    color: red;
+	    font-size:30px;
+	}
+	.class_name{
+	    font-weight:bold;
+	    text-align:center;
+	    font-style:Arial;
+	    color :green;
+	}
+	.quotations{
+	    text-align:center;
+	}
+	.random{
+		text-align:center;
+		font-style:Arial;
+	}
+	
+</style>
+</head>
+<body>
+    
+<div id = "header">
+
+<div class ="left_space">
+</div>
+
+    <div class ="center_space">
+    <h1 class ="homepage">MY HOMEPAGE</h1>
+    <p>This is my <span class = "home">homepage</span></p>
+    <p><del>This web site</del><ins>My homepagex</ins> is about <abbr title="HyperText Markup Language">HTML</abbr> 
+    and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    </div>
+    <div class = "right_space"></div>
+</div>
+
+
+<div id = "content">
+    
+    <div class ="left_space">
+    <br /><br /><br /><br />
+    <div class="code">
+        <b><p>Code</p></b>
+        <p>If you add the line <code><var>givevaderachuckle</var> = true;
+        </code> to the <code>destroy_planet</code> 
+        subroutine and then type <kbd>ilovejabba</kbd> 
+        into the console, the big bad green Death Star laser will etch 
+        <samp>Slug Lover!</samp> on the planet's surface.</p>
+    </div>  
+</div>
+
+<div class ="center_space">
+<ul>
+    <li><a href="html/">html</a></li>
+    <li><a href="less/">less</a></li>
+    <li><a href="bootstrap/">bootstrap</a></li>
+    <li><a href="ajax/">ajax</a></li>
+    <li><a href="ajax2/">ajax2</a></li>
+    <li><a href="react/">react</a></li>
+</ul>
+<br />
+<h2 class="class_name">CSE322 ASSIGNMENTS</h2>
+
+    <h4 class="quotations">Quotations</h4>
+    <p>So I asked Bob about quotations on the Web and he said <q>I know as much about quotations as I do about pigeon fancying</q>. Luckily, I found HTML Dog and it said:</p>
+</div>
+
+
+<div class ="right_space">
+
+
+<h3 class="random">Some random glossary thing</h3>
+<ul>
+<dl>
+    <li>HTML</li>
+    <dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+
+    <li>Dog</li>
+    <dd>Any carnivorous animal belonging to the family Canidae.</dd>
+    <dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
+
+    <li>Moo juice</li>
+    <li>Cat beer</li>
+    <li>Milk</li>
+    <dd>A white liquid produced by cows and used for human consumption.</dd>
+</dl>
+</ul>
+</div>
+
+<div id="footer">
+    
+    <div class ="left_space">
+    
+    
+<table border = "1">
+	<tr>
+		<td rowspan="4">Grade </td>
+	</tr>
+	<tr>
+		<td>Reading</td>
+		<td>Writing</td>
+		<td>Listening</td>
+		<td>Speaking</td>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>90</td>
+		<td>99</td>
+		<td>95</td>
+	</tr>
+	<tr>
+		<td colspan="3">Average </td>
+		<td>96</td>
+	</tr>
+</table>
+	</div>
+    <div class = "center_space">
+    <h3>Author contact details</h3>
+<address>
+<dtx><i>
+    <dd><bdo dir="rtl">gnoeJ oygnuE</bdo></dd>
+    <dd>909-961-5306</dd>
+    <dd>004466292@coyote.csusb.edu</dd>
+    <dd>2185 W.College ave. SanBernardino, CA</dd>
+</i></dt>
+</address>
+</div>
+
+    <div class ="right_space">
+        
+    <blockquote cite="http://www.htmldog.com/guides/html/intermediate/text/">
+    <p>blockquote and q are used for quotations. blockquote is generally used for standalone often multi-line quotations whereas q is used for shorter, in-line quotations.</p>
+    </blockquote>
+    <section>
+	<b>
+	<p>Citation</p>
+    <p>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
+	</b>
+    </section>    
+        
+    </div>
+
+</div>
+</body>
+</html>
