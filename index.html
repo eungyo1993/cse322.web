@@ -4,14 +4,8 @@
 
 <script>
 /* global ajax */
-function submitName(e) {
-            var name = document.getElementById('name').value;
-        ajax('msg.php', { "name": name}, function(resp) {
-          var container = document.getElementById('container');
-          while(container.hasChildNodes()) container.removeChild(container.firstChild);
-            container.appendChild(document.createTextNode(resp.msg));
-        });    
-        }
-        document.getElementById('submit').addEventListener('click', submitName, false);
-})();
-</script>   
+var container = document.getElementById('container');
+ajax('ajax-data.json', null, function(resp) {
+    container.appendChild(document.createTextNode(resp.msg));
+});
+</script>
